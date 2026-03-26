@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+
+:root {
+    --blue: #1e40af;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #f8fafc;
+    color: #27272a;
+}
+
+.hero-bg {
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    color: white;
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.profile-cube {
+    width: 280px;
+    height: 280px;
+    margin: 2rem auto;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.profile-cube:hover {
+    transform: rotate(4deg) scale(1.03);
+    box-shadow: 25px 25px 30px -10px rgba(30, 64, 175, 0.4);
+}
+
+.profile-cube img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 8px solid rgba(255,255,255,0.3);
+}
+
+.subtitle {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    background: rgba(255,255,255,0.95);
+    color: #1e40af;
+    padding: 12px 24px;
+    border-radius: 9999px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-size: 1.1rem;
+}
+
+.tab-button {
+    padding: 16px 40px;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 1.125rem;
+    border: 2px solid #1e40af;
+    background: white;
+    color: #1e40af;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-button.active {
+    background: #1e40af;
+    color: white;
+    box-shadow: 0 10px 15px -3px rgb(30 64 175);
+}
+
+.card {
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,0.15);
+    padding: 40px;
+}
+
+.section-title {
+    font-size: 1.875rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.skills-content {
+    animation: fadeIn 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 9999px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-decoration: none;
+    white-space: nowrap;
+    width:fit-content;
+    max-width: fit-content;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background: #128C7E;
+    transform: scale(1.03);
+}
+
+.footer {
+    background: #18181b;
+    color: white;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.footer p {
+    opacity: 0.7;
+}
